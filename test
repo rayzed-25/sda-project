@@ -1,0 +1,17 @@
+
+fw = open("marks.txt", "w" )
+fw.write("math marks are:" + str(input("enter math marks:" )) +"\n")
+fw.write("english marks are:" + str(input("enter english marks:"  )) +"\n")
+fw.write("urdu marks are:" + str(input("enter urdu marks:" )) +"\n")
+fw.write("physics marks are:" + str(input("enter physics marks:" )) +"\n")
+fw.write("chemistry marks are:" + str(input("enter chemistry marks:" )) +"\n")
+fw.write(" computer science are:" + str(input("enter computer science marks:" )) +"\n")
+fw.write("geography marks are:" + str(input("enter geography marks:")) +"\n")
+fw.write("history marks are:" + str(input("enter history marks:")) +"\n")
+
+fw.close()
+
+fr = open('marks.txt', 'r')
+text = fr.read()
+print(text)
+fr.close()
